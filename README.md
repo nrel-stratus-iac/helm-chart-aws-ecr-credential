@@ -56,7 +56,7 @@ NAME                                                  COMPLETIONS   DURATION   A
 job.batch/refresh-image-pull-secret-for-my-user-job   1/1           5s         39s
 
 NAME                                                       SCHEDULE      SUSPEND   ACTIVE   LAST SCHEDULE   AGE
-cronjob.batch/refresh-image-pull-secret-for-my-user-cron   * */8 * * *   False     0        <none>          39s
+cronjob.batch/refresh-image-pull-secret-for-my-user-cron   0 */8 * * *   False     0        <none>          39s
 $ kubectl -n my-user-namespace get secrets
 NAME                    TYPE                                  DATA   AGE
 default-token-cmp42     kubernetes.io/service-account-token   3      11m
